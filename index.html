@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>freeCodeCamp Survery Form</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <section class="top">
+      <h1 id="title" class="title"> Survery Form</h1>
+      <p id="description" class="description">
+        Thank you for taking the time to help us improve the platform
+      </p>
+    </section>
+    <form id="survey-form" method="post">
+      <fieldset class="main">
+        <label id="name-label" for="name"
+          >Name
+          <input id="name" type="text" placeholder="Enter your name" required
+        /></label>
+        <label id="email-label" for="email"
+          >Email
+          <input
+            id="email"
+            type="email"
+            placeholder="Enter your Email"
+            required
+        /></label>
+        <label id="number-label" for="age"
+          >Age (optional)
+          <input
+            id="number"
+            name="age"
+            type="number"
+            min="10"
+            max="99"
+            placeholder="Age"
+        /></label>
+        <label for="job">
+          Which option best describes your current role?
+          <select id="dropdown">
+            <option value="" checked>Slect current role</option>
+            <option value="1">Student</option>
+            <option value="2">Full-time job</option>
+            <option value="3">Full-time learner</option>
+            <option value="4">Prefer not to say</option>
+            <option value="5">Other</option>
+          </select>
+        </label>
+        <label id="no-bot-margin">Would you recommend to a friend?</label>
+        <label for="Definitely" class="no-margin"
+          ><input
+            value="1"
+            name="recommendation"
+            type="radio"
+            id="Definitely"
+            class="inline"
+            checked
+          />
+          Definitely
+        </label>
+        <label for="Maybe" class="no-margin">
+          <input value="2" type="radio" name="recommendation" id="Maybe" class="inline" />
+          Maybe
+        </label>
+        <label for="not-sure" class="no-margin">
+          <input
+            value="3"
+            type="radio"
+            name="recommendation"
+            id="not-sure"
+            class="inline"
+          />
+          Not sure
+        </label>
+      </fieldset>
+      <fieldset class="main">
+        <label class="no-margin"
+          >What is your favorite feature of 
+          <select class="feature">
+            <option value="" checked>Select an option</option>
+            <option value="1">Challenges</option>
+            <option value="2">Project</option>
+            <option value="3">Community</option>
+            <option value="4">Open Source</option>
+          </select></label
+        >
+
+        <label id="no-bot-margin">
+          What would you like to see improved? (Check all that apply)</label
+        >
+        <label class="no-margin"
+          ><input type="checkbox" value="front-end-projects" class="inline" />
+          Front-end Projects</label
+        >
+        <label class="no-margin"
+          ><input type="checkbox" value="back-end-projects" class="inline" />
+          Back-end Projects</label
+        >
+        <label class="no-margin"
+          ><input type="checkbox" value="data-visualisation" class="inline" />
+          Data Visualization</label
+        >
+        <label class="no-margin"
+          ><input type="checkbox" value="challenges" class="inline" />
+          Challenges</label
+        >
+        <label class="no-margin"
+          ><input type="checkbox" value="community" class="inline" /> Open
+          Source Community</label
+        >
+        <label class="no-margin"
+          ><input type="checkbox" value="help" class="inline" /> Gitter help
+          rooms</label
+        >
+        <label class="no-margin"
+          ><input type="checkbox" value="videos" class="inline" /> Videos</label
+        >
+        <label class="no-margin"
+          ><input type="checkbox" value="meetups" class="inline" /> City
+          Meetups</label
+        >
+        <label class="no-margin"
+          ><input type="checkbox" value="wiki" class="inline" /> Wiki</label
+        >
+        <label class="no-margin"
+          ><input type="checkbox" value="forum" class="inline" /> Forum</label
+        >
+        <label class="no-margin"
+          ><input type="checkbox" value="courses" class="inline" /> Additional
+          Courses</label
+        >
+        <label class="no-margin">
+          Any comments or suggestions?
+          <textarea placeholder="Enter your comment here..."></textarea>
+        </label>
+        <label class="no-margin">
+          <input id="submit" type="submit" value="submit" />
+        </label>
+      </fieldset>
+    </form>
+  </body>
+</html>
+
