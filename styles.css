@@ -66,6 +66,7 @@ textarea{
     padding: 0.625rem;
     resize: vertical;
     display:block;
+    color: black;
 }
 label{
     margin: 20px;
